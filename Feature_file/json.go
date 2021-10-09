@@ -28,7 +28,7 @@ func WriteJson(w http.ResponseWriter, r *http.Request, v interface{}) {
 		return
 	}
 	if len(jsonData) == 0 {
-		http.Error(w, "No data found for the request", http.StatusNotFound)
+		http.Error(w, "NO DATA FOUND", http.StatusNotFound)
 		return
 	}
 	w.Write(jsonData)
